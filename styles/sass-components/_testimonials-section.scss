@@ -3,10 +3,6 @@
     @include flexCenter(column);
     gap: 50px;
 
-    .title, .client {
-        border: 3px solid red;
-    }
-
     .title {
         color: $specialGray;
         letter-spacing: 3px;

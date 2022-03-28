@@ -178,10 +178,6 @@ body .main .testimonials-section {
   gap: 50px;
 }
 
-body .main .testimonials-section .title, body .main .testimonials-section .client {
-  border: 3px solid red;
-}
-
 body .main .testimonials-section .title {
   color: #969696;
   letter-spacing: 3px;
