@@ -1,3 +1,5 @@
+$darkBlue: hsl(198, 62%, 26%);
+
 @font-face {
     font-family: "Barlow Light";
     src: url("../fonts/Barlow/Barlow-Light.ttf");
@@ -26,4 +28,8 @@ body {
     flex-direction: column;
 
     @import "./sass-components/header";
+
+    .main {
+        @import "./sass-components/brand-section";
+    }
 }

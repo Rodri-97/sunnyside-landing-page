@@ -1,0 +1,47 @@
+.brand-section {
+    display: flex;
+    flex-direction: column;
+
+    .img-container {
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .text-container {
+        padding: 50px 25px;
+        text-align: center;
+        @include flexCenter(column);
+        gap: 20px;
+
+        h2, span {
+            font-family: "Barlow Bold";
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+    }
+
+    .img-and-text-container {
+        position: relative;
+
+        .text-container {
+            color: $darkBlue;
+            font-family: "Barlow Bold";
+            font-weight: bold;
+            position: absolute;
+            z-index: 1;
+            bottom: 30px;
+        }
+
+        .img-container {
+            height: 100%;
+
+            img {
+                height: 600px;
+            }
+        }
+    }
+}

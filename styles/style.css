@@ -87,4 +87,67 @@ body .header .title {
   margin-top: 100px;
   margin-bottom: 50px;
 }
+
+body .main .brand-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main .brand-section .img-container img {
+  width: 100%;
+  display: block;
+}
+
+body .main .brand-section .text-container {
+  padding: 50px 25px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+body .main .brand-section .text-container h2, body .main .brand-section .text-container span {
+  font-family: "Barlow Bold";
+}
+
+body .main .brand-section .text-container h2 {
+  font-size: 35px;
+}
+
+body .main .brand-section .img-and-text-container {
+  position: relative;
+}
+
+body .main .brand-section .img-and-text-container .text-container {
+  color: #19536b;
+  font-family: "Barlow Bold";
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+}
+
+body .main .brand-section .img-and-text-container .img-container {
+  height: 100%;
+}
+
+body .main .brand-section .img-and-text-container .img-container img {
+  height: 600px;
+}
 /*# sourceMappingURL=style.css.map */
