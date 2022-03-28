@@ -8,6 +8,11 @@
   src: url("../fonts/Barlow/Barlow-Bold.ttf");
 }
 
+@font-face {
+  font-family: "Barlow Extra Bold";
+  src: url("../fonts/Barlow/Barlow-ExtraBold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -130,6 +135,10 @@ body .main .brand-section .text-container h2 {
   font-size: 35px;
 }
 
+body .main .brand-section .text-container span {
+  cursor: pointer;
+}
+
 body .main .brand-section .img-and-text-container {
   position: relative;
 }
@@ -149,5 +158,84 @@ body .main .brand-section .img-and-text-container .img-container {
 
 body .main .brand-section .img-and-text-container .img-container img {
   height: 600px;
+}
+
+body .main .testimonials-section {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+body .main .testimonials-section .title, body .main .testimonials-section .client {
+  border: 3px solid red;
+}
+
+body .main .testimonials-section .title {
+  color: #969696;
+  letter-spacing: 3px;
+  font-family: "Barlow Bold";
+}
+
+body .main .testimonials-section .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  padding: 0 30px;
+  text-align: center;
+  color: #23303e;
+  font-family: "Barlow Bold";
+  font-weight: bold;
+}
+
+body .main .testimonials-section .client img {
+  border-radius: 50%;
+}
+
+body .main .testimonials-section .client .client-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+body .main .testimonials-section .client .client-info h3 {
+  font-family: "Barlow Extra Bold";
+}
+
+body .main .testimonials-section .client .client-info span {
+  color: #969696;
 }
 /*# sourceMappingURL=style.css.map */

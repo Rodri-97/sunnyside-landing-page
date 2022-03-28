@@ -1,4 +1,6 @@
 $darkBlue: hsl(198, 62%, 26%);
+$veryDarkBlue: hsl(212, 27%, 19%);
+$specialGray: rgb(150, 150, 150);
 
 @font-face {
     font-family: "Barlow Light";
@@ -8,6 +10,11 @@ $darkBlue: hsl(198, 62%, 26%);
 @font-face {
     font-family: "Barlow Bold";
     src: url("../fonts/Barlow/Barlow-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Barlow Extra Bold";
+    src: url("../fonts/Barlow/Barlow-ExtraBold.ttf");
 }
 
 @mixin flexCenter($direction) {
@@ -31,5 +38,6 @@ body {
 
     .main {
         @import "./sass-components/brand-section";
+        @import "./sass-components/testimonials-section";
     }
 }

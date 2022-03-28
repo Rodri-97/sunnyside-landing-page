@@ -1,0 +1,42 @@
+.testimonials-section {
+    padding-top: 50px;
+    @include flexCenter(column);
+    gap: 50px;
+
+    .title, .client {
+        border: 3px solid red;
+    }
+
+    .title {
+        color: $specialGray;
+        letter-spacing: 3px;
+        font-family: "Barlow Bold";
+    }
+
+    .client {
+        @include flexCenter(column);
+        gap: 30px;
+        padding: 0 30px;
+        text-align: center;
+        color: $veryDarkBlue;
+        font-family: "Barlow Bold";
+        font-weight: bold;
+
+        img {
+            border-radius: 50%;
+        }
+
+        .client-info {
+            @include flexCenter(column);
+            gap: 10px;
+
+            h3 {
+                font-family: "Barlow Extra Bold";
+            }
+
+            span {
+                color: $specialGray;
+            }
+        }
+    }
+}
