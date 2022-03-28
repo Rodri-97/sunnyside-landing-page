@@ -161,7 +161,7 @@ body .main .brand-section .img-and-text-container .img-container img {
 }
 
 body .main .testimonials-section {
-  padding-top: 50px;
+  padding: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,8 +180,8 @@ body .main .testimonials-section {
 
 body .main .testimonials-section .title {
   color: #969696;
-  letter-spacing: 3px;
-  font-family: "Barlow Bold";
+  letter-spacing: 6px;
+  font-family: "Barlow Extra Bold";
 }
 
 body .main .testimonials-section .client {
