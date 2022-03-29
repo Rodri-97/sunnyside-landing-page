@@ -1,6 +1,7 @@
 $darkBlue: hsl(198, 62%, 26%);
 $veryDarkBlue: hsl(212, 27%, 19%);
 $specialGray: rgb(150, 150, 150);
+$darkModerateCyan: hsl(168, 34%, 41%);
 
 @font-face {
     font-family: "Barlow Light";
@@ -41,4 +42,6 @@ body {
         @import "./sass-components/testimonials-section";
         @import "./sass-components/gallery-section";
     }
+    
+    @import "./sass-components/footer";
 }

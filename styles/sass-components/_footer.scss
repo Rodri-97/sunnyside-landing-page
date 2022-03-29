@@ -1,0 +1,36 @@
+.footer {
+    background: rgb(144,212,197);
+    color: $darkModerateCyan;
+    @include flexCenter(column);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .footer-menu {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        @include flexCenter(row);
+        gap: 50px;
+
+        span {
+            font-family: "Barlow Bold";
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            cursor: pointer;
+
+            &:hover {
+                border-bottom-color: $darkModerateCyan;
+            }
+        }
+    }
+
+    .footer-contact {
+        @include flexCenter(row);
+        gap: 25px;
+
+        img {
+            cursor: pointer;
+        }
+    }
+}
