@@ -234,4 +234,18 @@ body .main .testimonials-section .client .client-info h3 {
 body .main .testimonials-section .client .client-info span {
   color: #969696;
 }
+
+body .main .gallery-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+body .main .gallery-section .img-container img {
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */
