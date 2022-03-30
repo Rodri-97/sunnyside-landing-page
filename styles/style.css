@@ -63,6 +63,10 @@ body .header .nav-container {
           justify-content: space-between;
 }
 
+body .header .nav-container .desktop-nav {
+  display: none;
+}
+
 body .header .nav-container .icon-container {
   height: 25px;
   -webkit-box-flex: 1;
@@ -102,7 +106,7 @@ body .header .title {
   margin-bottom: 50px;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 700px) {
   body .header .nav-container .hamburger-icon.hide {
     display: none;
   }
@@ -149,6 +153,7 @@ body .header .title {
     border-radius: 30px;
     padding: 5px 20px;
     font-weight: bold;
+    font-family: "Barlow Extra Bold";
   }
   body .header .mobile-nav.show button:hover {
     color: white;
@@ -157,9 +162,52 @@ body .header .title {
   }
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 700px) {
+  body .header {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
   body .header .nav-container .icon-container {
     display: none;
+  }
+  body .header .nav-container .desktop-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+    font-weight: bold;
+  }
+  body .header .nav-container .desktop-nav span, body .header .nav-container .desktop-nav button {
+    cursor: pointer;
+  }
+  body .header .nav-container .desktop-nav span {
+    border: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+  }
+  body .header .nav-container .desktop-nav span:hover {
+    border-bottom-color: white;
+  }
+  body .header .nav-container .desktop-nav button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-family: "Barlow Extra Bold";
+  }
+  body .header .nav-container .desktop-nav button:hover {
+    color: white;
+    background: orange;
   }
 }
 

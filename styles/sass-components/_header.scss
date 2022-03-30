@@ -11,6 +11,10 @@
         flex-direction: row;
         justify-content: space-between;
 
+        .desktop-nav {
+            display: none;
+        }
+
         .icon-container {
             height: 25px;
             flex-grow: 1;
@@ -45,11 +49,47 @@
 
 @import "./dynamic-header-classes";
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 700px) {
     .header {
+        background-image: url("../images/desktop/image-header.jpg");
+
         .nav-container {
             .icon-container {
                 display: none;
+            }
+
+            .desktop-nav {
+                @include flexCenter(row);
+                gap: 40px;
+                font-weight: bold;
+
+                span, button {
+                    cursor: pointer;
+                }
+            
+                span {
+                    border: 3px solid transparent;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: white;
+            
+                    &:hover {
+                        border-bottom-color: white;
+                    }
+                }
+            
+                button {
+                    border: none;
+                    border-radius: 30px;
+                    padding: 10px 30px;
+                    font-weight: bold;
+                    font-family: "Barlow Extra Bold";
+            
+                    &:hover {
+                        color: white;
+                        background: orange;
+                    }
+                }
             }
         }
     }

@@ -1,4 +1,4 @@
-@media all and (max-width: 800px) {
+@media all and (max-width: 700px) {
     .header {
         .nav-container {
             .hamburger-icon.hide {
@@ -21,27 +21,28 @@
             width: 90%;
             padding-top: 30px;
             padding-bottom: 30px;
-    
+
             span, button {
                 cursor: pointer;
             }
-    
+        
             span {
                 border: 3px solid transparent;
                 padding-top: 5px;
                 padding-bottom: 5px;
-    
+        
                 &:hover {
                     border-bottom-color: black;
                 }
             }
-    
+        
             button {
                 border: 3px solid black;
                 border-radius: 30px;
                 padding: 5px 20px;
                 font-weight: bold;
-    
+                font-family: "Barlow Extra Bold";
+        
                 &:hover {
                     color: white;
                     background: orange;
