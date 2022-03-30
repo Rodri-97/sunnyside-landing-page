@@ -440,6 +440,18 @@ body .main .gallery-section .img-container img {
   height: 100%;
 }
 
+@media all and (min-width: 700px) {
+  body .main .gallery-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 body .footer {
   background: #90d4c5;
   color: #458c7e;
