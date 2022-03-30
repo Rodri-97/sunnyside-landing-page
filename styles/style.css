@@ -63,7 +63,8 @@ body .header .nav-container {
           justify-content: space-between;
 }
 
-body .header .nav-container .hamburger-container {
+body .header .nav-container .icon-container {
+  height: 25px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -79,8 +80,76 @@ body .header .nav-container .hamburger-container {
           justify-content: end;
 }
 
-body .header .nav-container .hamburger-container .hamburger {
+body .header .nav-container .icon-container .hamburger-icon, body .header .nav-container .icon-container .close-icon {
   cursor: pointer;
+}
+
+body .header .nav-container .icon-container .close-icon {
+  display: none;
+}
+
+body .header .nav-container .icon-container .hamburger-icon.hide {
+  display: none;
+}
+
+body .header .nav-container .icon-container .close-icon.show {
+  display: block;
+}
+
+body .header .mobile-nav {
+  display: none;
+}
+
+body .header .mobile-nav.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  width: 90%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+body .header .mobile-nav.show span, body .header .mobile-nav.show button {
+  cursor: pointer;
+}
+
+body .header .mobile-nav.show span {
+  border: 3px solid transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+body .header .mobile-nav.show span:hover {
+  border-bottom-color: black;
+}
+
+body .header .mobile-nav.show button {
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-weight: bold;
+}
+
+body .header .mobile-nav.show button:hover {
+  color: white;
+  background: orange;
+  border-color: transparent;
 }
 
 body .header .title {
