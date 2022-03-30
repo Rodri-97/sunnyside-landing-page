@@ -25,59 +25,11 @@
             .close-icon {
                 display: none;
             }
-
-            .hamburger-icon.hide {
-                display: none;
-            }
-
-            .close-icon.show {
-                display: block;
-            }
         }
     }
 
     .mobile-nav {
         display: none;
-    }
-
-    .mobile-nav.show {
-        @include flexCenter(column);
-        gap: 20px;
-        font-weight: bold;
-        background-color: white;
-        position: absolute;
-        z-index: 1;
-        top: 100px;
-        width: 90%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-
-        span, button {
-            cursor: pointer;
-        }
-
-        span {
-            border: 3px solid transparent;
-            padding-top: 5px;
-            padding-bottom: 5px;
-
-            &:hover {
-                border-bottom-color: black;
-            }
-        }
-
-        button {
-            border: 3px solid black;
-            border-radius: 30px;
-            padding: 5px 20px;
-            font-weight: bold;
-
-            &:hover {
-                color: white;
-                background: orange;
-                border-color: transparent;
-            }
-        }
     }
 
     .title {
@@ -88,5 +40,17 @@
         text-align: center;
         margin-top: 100px;
         margin-bottom: 50px;
+    }
+}
+
+@import "./dynamic-header-classes";
+
+@media all and (min-width: 800px) {
+    .header {
+        .nav-container {
+            .icon-container {
+                display: none;
+            }
+        }
     }
 }
