@@ -1,38 +1,56 @@
 .testimonials-section {
-    padding: 100px 0;
-    @include flexCenter(column);
-    gap: 50px;
-
+    margin-bottom: 120px;
+    
     .title {
         color: $specialGray;
         letter-spacing: 6px;
         font-family: "Barlow Extra Bold";
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 70px;
     }
 
-    .client {
+    .clients {
         @include flexCenter(column);
-        gap: 30px;
-        padding: 0 30px;
-        text-align: center;
-        color: $veryDarkBlue;
-        font-family: "Barlow Bold";
-        font-weight: bold;
+        gap: 50px;
 
-        img {
-            border-radius: 50%;
-        }
-
-        .client-info {
+        .client {
             @include flexCenter(column);
-            gap: 10px;
-
-            h3 {
-                font-family: "Barlow Extra Bold";
+            gap: 30px;
+            padding: 0 30px;
+            text-align: center;
+            color: $veryDarkBlue;
+            font-family: "Barlow Bold";
+            font-weight: bold;
+    
+            img {
+                border-radius: 50%;
             }
-
-            span {
-                color: $specialGray;
+    
+            .client-info {
+                @include flexCenter(column);
+                gap: 10px;
+    
+                h3 {
+                    font-family: "Barlow Extra Bold";
+                }
+    
+                span {
+                    color: $specialGray;
+                }
             }
+        }
+    }
+}
+
+@media all and (min-width: 800px) {
+    .testimonials-section {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .clients {
+            flex-direction: row;
+            gap: 0;
         }
     }
 }

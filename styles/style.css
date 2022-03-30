@@ -332,7 +332,19 @@ body .main .brand-section .img-and-text-container .img-container img {
 }
 
 body .main .testimonials-section {
-  padding: 100px 0;
+  margin-bottom: 120px;
+}
+
+body .main .testimonials-section .title {
+  color: #969696;
+  letter-spacing: 6px;
+  font-family: "Barlow Extra Bold";
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 70px;
+}
+
+body .main .testimonials-section .clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,13 +361,7 @@ body .main .testimonials-section {
   gap: 50px;
 }
 
-body .main .testimonials-section .title {
-  color: #969696;
-  letter-spacing: 6px;
-  font-family: "Barlow Extra Bold";
-}
-
-body .main .testimonials-section .client {
+body .main .testimonials-section .clients .client {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,11 +383,11 @@ body .main .testimonials-section .client {
   font-weight: bold;
 }
 
-body .main .testimonials-section .client img {
+body .main .testimonials-section .clients .client img {
   border-radius: 50%;
 }
 
-body .main .testimonials-section .client .client-info {
+body .main .testimonials-section .clients .client .client-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,12 +404,26 @@ body .main .testimonials-section .client .client-info {
   gap: 10px;
 }
 
-body .main .testimonials-section .client .client-info h3 {
+body .main .testimonials-section .clients .client .client-info h3 {
   font-family: "Barlow Extra Bold";
 }
 
-body .main .testimonials-section .client .client-info span {
+body .main .testimonials-section .clients .client .client-info span {
   color: #969696;
+}
+
+@media all and (min-width: 800px) {
+  body .main .testimonials-section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  body .main .testimonials-section .clients {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0;
+  }
 }
 
 body .main .gallery-section {
