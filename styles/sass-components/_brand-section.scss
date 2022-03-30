@@ -2,10 +2,17 @@
     display: flex;
     flex-direction: column;
 
+    .mobile-img {
+        display: block;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
     .img-container {
         img {
             width: 100%;
-            display: block;
         }
     }
 
@@ -46,6 +53,50 @@
             img {
                 height: 600px;
             }
+        }
+    }
+}
+
+@media all and (min-width: 900px) {
+    .brand-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "transform egg"
+            "cup standout"
+            "cherries clementine"
+        ;
+
+        .mobile-img {
+            display: none;
+        }
+    
+        .desktop-img {
+            display: block;
+        }
+
+        .transform {
+            grid-area: transform;
+        }
+
+        .egg {
+            grid-area: egg;
+        }
+
+        .cup {
+            grid-area: cup;
+        }
+
+        .standout {
+            grid-area: standout;
+        }
+
+        .cherries {
+            grid-area: cherries;
+        }
+
+        .clementine {
+            grid-area: clementine;
         }
     }
 }

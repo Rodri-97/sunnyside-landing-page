@@ -221,9 +221,16 @@ body .main .brand-section {
           flex-direction: column;
 }
 
+body .main .brand-section .mobile-img {
+  display: block;
+}
+
+body .main .brand-section .desktop-img {
+  display: none;
+}
+
 body .main .brand-section .img-container img {
   width: 100%;
-  display: block;
 }
 
 body .main .brand-section .text-container {
@@ -276,6 +283,52 @@ body .main .brand-section .img-and-text-container .img-container {
 
 body .main .brand-section .img-and-text-container .img-container img {
   height: 600px;
+}
+
+@media all and (min-width: 900px) {
+  body .main .brand-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "transform egg" "cup standout" "cherries clementine";
+  }
+  body .main .brand-section .mobile-img {
+    display: none;
+  }
+  body .main .brand-section .desktop-img {
+    display: block;
+  }
+  body .main .brand-section .transform {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: transform;
+  }
+  body .main .brand-section .egg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: egg;
+  }
+  body .main .brand-section .cup {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cup;
+  }
+  body .main .brand-section .standout {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: standout;
+  }
+  body .main .brand-section .cherries {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: cherries;
+  }
+  body .main .brand-section .clementine {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: clementine;
+  }
 }
 
 body .main .testimonials-section {
